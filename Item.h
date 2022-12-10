@@ -12,9 +12,23 @@ private:
 
 public:
     Item(string name, double price, int quantity);
+
     Item();
     string getName()
     {
         return name;
     }
+    double getPrice()
+    {
+        return price;
+    }
+    int getQuantity()
+    {
+        return quantity;
+    }
+    Item *getNextPointer()
+    {
+        return next;
+    }
+    void setNextPointer(Item *nextNode);
 };

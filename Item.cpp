@@ -7,3 +7,7 @@ Item::Item(string name, double price, int quantity)
     this->price = price;
     this->quantity = quantity;
 }
+void Item::setNextPointer(Item *nextNode)
+{
+    this->next = nextNode;
+}
