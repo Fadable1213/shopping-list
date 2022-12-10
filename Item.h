@@ -1,3 +1,6 @@
+#ifndef ITEM_H
+#define ITEM_H
+
 #include <iostream>
 
 using namespace std;
@@ -13,7 +16,9 @@ private:
 public:
     Item(string name, double price, int quantity);
 
-    Item();
+    Item()
+    {
+    }
     string getName()
     {
         return name;
@@ -32,3 +37,4 @@ public:
     }
     void setNextPointer(Item *nextNode);
 };
+#endif

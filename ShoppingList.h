@@ -1,3 +1,5 @@
+#ifndef SHOPPINGLIST_H
+#define SHOPPINGLIST_H
 #include "Item.h"
 #include <iostream>
 
@@ -11,6 +13,7 @@ private:
 
 public:
     ShoppingList();
-    void insertItem();
-    void printNodes();
+    void insertItem(string name, double price, int quantity);
+    void displayList();
 };
+#endif

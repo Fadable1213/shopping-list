@@ -1,11 +1,13 @@
 #include "Item.h"
+#include "ShoppingList.h"
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    Item item = Item("egg", 1.00, 1);
-    string name = item.getName();
-    cout << name << endl;
+    ShoppingList list = ShoppingList();
+    list.insertItem("eg", 1.00, 900);
+    list.insertItem("tomeito", 1.50, 9);
+    list.displayList();
 }
