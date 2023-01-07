@@ -19,7 +19,7 @@ void ShoppingList::insertItem(string name, double price, int quantity)
     }
     else
     {
-        this->head->setNextPointer(nextNode);
+        nextNode->setNextPointer(this -> head); 
         this->tail = nextNode;
     }
 }
@@ -27,7 +27,7 @@ void ShoppingList::insertItem(string name, double price, int quantity)
 void ShoppingList::displayList()
 {
     Item *c = this->head;
-    while (c != nullptr)
+    while (c != nullptr)  
     {
         cout << c->getName() << endl;
         cout << c->getPrice() << endl;
@@ -35,4 +35,8 @@ void ShoppingList::displayList()
         cout << endl;
         c = c->getNextPointer();
     }
+}
+void ShoppingList::deleteItem()
+{
+    tail = nullptr;
 }

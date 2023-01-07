@@ -15,5 +15,6 @@ public:
     ShoppingList();
     void insertItem(string name, double price, int quantity);
     void displayList();
+    void deleteItem();
 };
 #endif
