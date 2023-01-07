@@ -54,4 +54,3 @@ int main()
         cin >> option;
     }
 }
-
