@@ -44,6 +44,8 @@ int main()
         }
         if (option == 't')
         {
+            double total = list.totalCost();
+            cout <<"The total price is: $"<< total << endl;
         }
         cout << "Choose an Option" << endl;
         cout << "a - Add to Shopping list" << endl;

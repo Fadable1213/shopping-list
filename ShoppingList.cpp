@@ -40,3 +40,14 @@ void ShoppingList::deleteItem()
 {
     tail = nullptr;
 }
+double ShoppingList::totalCost(){
+    double amount = 0.0;
+    Item *c = this->head;
+    while(c != nullptr){
+        double price = c->getPrice() * c->getQuantity();
+        amount = amount + price;
+        c = c->getNextPointer();
+    }
+    return amount;
+
+}
