@@ -29,9 +29,9 @@ void ShoppingList::displayList()
     Item *c = this->head;
     while (c != nullptr)
     {
-        cout << c->getName() << endl;
-        cout << c->getPrice() << endl;
-        cout << c->getQuantity() << endl;
+        cout << "Item: " << c->getName() << endl;
+        cout << "Price: " << c->getPrice() << endl;
+        cout << "Amount: " <<c->getQuantity() << endl;
         cout << endl;
         c = c->getNextPointer();
     }
